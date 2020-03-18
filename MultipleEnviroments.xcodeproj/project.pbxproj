@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F47B9FFE2422A6E800FA2497 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47B9FFB2422A6E800FA2497 /* GoogleService-Info-Dev.plist */; };
+		F47B9FFF2422A6E800FA2497 /* GoogleService-Info-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47B9FFC2422A6E800FA2497 /* GoogleService-Info-Prod.plist */; };
+		F47BA0002422A6E800FA2497 /* GoogleService-Info-QA.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47B9FFD2422A6E800FA2497 /* GoogleService-Info-QA.plist */; };
 		F4D14011242262F90067358D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D14010242262F90067358D /* AppDelegate.swift */; };
 		F4D14013242262F90067358D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D14012242262F90067358D /* SceneDelegate.swift */; };
 		F4D14015242262F90067358D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D14014242262F90067358D /* ViewController.swift */; };
@@ -35,7 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F4D1400D242262F90067358D /* MultipleEnviroments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleEnviroments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47B9FFB2422A6E800FA2497 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
+		F47B9FFC2422A6E800FA2497 /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
+		F47B9FFD2422A6E800FA2497 /* GoogleService-Info-QA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-QA.plist"; sourceTree = "<group>"; };
+		F4D1400D242262F90067358D /* ME-DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ME-DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D14010242262F90067358D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4D14012242262F90067358D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4D14014242262F90067358D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F47B9FFA2422A6D700FA2497 /* GoogleService */ = {
+			isa = PBXGroup;
+			children = (
+				F47B9FFB2422A6E800FA2497 /* GoogleService-Info-Dev.plist */,
+				F47B9FFC2422A6E800FA2497 /* GoogleService-Info-Prod.plist */,
+				F47B9FFD2422A6E800FA2497 /* GoogleService-Info-QA.plist */,
+			);
+			path = GoogleService;
+			sourceTree = "<group>";
+		};
 		F4D14004242262F90067358D = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +105,7 @@
 		F4D1400E242262F90067358D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4D1400D242262F90067358D /* MultipleEnviroments.app */,
+				F4D1400D242262F90067358D /* ME-DEV.app */,
 				F4D14023242262FA0067358D /* MultipleEnviromentsTests.xctest */,
 				F4D1402E242262FA0067358D /* MultipleEnviromentsUITests.xctest */,
 			);
@@ -99,6 +115,7 @@
 		F4D1400F242262F90067358D /* MultipleEnviroments */ = {
 			isa = PBXGroup;
 			children = (
+				F47B9FFA2422A6D700FA2497 /* GoogleService */,
 				F4D14010242262F90067358D /* AppDelegate.swift */,
 				F4D14012242262F90067358D /* SceneDelegate.swift */,
 				F4D14014242262F90067358D /* ViewController.swift */,
@@ -138,6 +155,7 @@
 				F4D14009242262F90067358D /* Sources */,
 				F4D1400A242262F90067358D /* Frameworks */,
 				F4D1400B242262F90067358D /* Resources */,
+				F47BA0012422A71900FA2497 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,7 +163,7 @@
 			);
 			name = MultipleEnviroments;
 			productName = MultipleEnviroments;
-			productReference = F4D1400D242262F90067358D /* MultipleEnviroments.app */;
+			productReference = F4D1400D242262F90067358D /* ME-DEV.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F4D14022242262FA0067358D /* MultipleEnviromentsTests */ = {
@@ -233,8 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D1401D242262FA0067358D /* LaunchScreen.storyboard in Resources */,
+				F47B9FFF2422A6E800FA2497 /* GoogleService-Info-Prod.plist in Resources */,
+				F47B9FFE2422A6E800FA2497 /* GoogleService-Info-Dev.plist in Resources */,
 				F4D1401A242262FA0067358D /* Assets.xcassets in Resources */,
 				F4D14018242262F90067358D /* Main.storyboard in Resources */,
+				F47BA0002422A6E800FA2497 /* GoogleService-Info-QA.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +274,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F47BA0012422A71900FA2497 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [ \"${PRODUCT_NAME}\" == \"ME-DEV\" ]; then\ncp -r \"${PROJECT_DIR}/MultipleEnviroments/GoogleService/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\necho \"Setted Firebase Configuration for ${PRODUCT_NAME} build using GoogleService-Info-Dev.plist\"\n\nelif [ \"${PRODUCT_NAME}\" == \"ME-QA\" ]; then\ncp -r \"${PROJECT_DIR}/MultipleEnviroments/GoogleService/GoogleService-Info-QA.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\necho \"Setted Firebase Configuration for ${PRODUCT_NAME} build using GoogleService-Info-QA.plist\"\n\nelse\ncp -r \"${PROJECT_DIR}/MultipleEnviroments/GoogleService/GoogleService-Info-Prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\necho \"Setted Firebase Configuration for ${PRODUCT_NAME} build using GoogleService-Info-Prod.plist\"\n\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4D14009242262F90067358D /* Sources */ = {
@@ -320,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,11 +408,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SERVER_URL = "https://www.dev.com";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -380,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconProd;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -420,10 +464,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SERVER_URL = "https://www.prod.com";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -433,7 +478,7 @@
 		F4D14038242262FA0067358D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				API_KEY_FABRIC = 47x3h8mh73mx4885u8934u5x8u43m945c;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SN83FZJ9R5;
 				INFOPLIST_FILE = MultipleEnviroments/Info.plist;
@@ -441,8 +486,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.MultipleEnviroments;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.MultipleEnviroments.dev;
+				PRODUCT_NAME = "ME-DEV";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +496,7 @@
 		F4D14039242262FA0067358D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				API_KEY_FABRIC = abcdh8mh73mx4885u8934u5x8u43m9444;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SN83FZJ9R5;
 				INFOPLIST_FILE = MultipleEnviroments/Info.plist;
@@ -460,7 +505,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.MultipleEnviroments;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ME-PROD";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -550,6 +595,128 @@
 			};
 			name = Release;
 		};
+		F4D14040242265480067358D /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconQA;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SERVER_URL = "https://www.qa.com";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QA;
+		};
+		F4D14041242265480067358D /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_KEY_FABRIC = 1234h8mh73mx4885u8934u5x8u43m9412;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN83FZJ9R5;
+				INFOPLIST_FILE = MultipleEnviroments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.MultipleEnviroments.qa;
+				PRODUCT_NAME = "ME-QA";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
+		F4D14042242265480067358D /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN83FZJ9R5;
+				INFOPLIST_FILE = MultipleEnviromentsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.MultipleEnviromentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultipleEnviroments.app/MultipleEnviroments";
+			};
+			name = QA;
+		};
+		F4D14043242265480067358D /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN83FZJ9R5;
+				INFOPLIST_FILE = MultipleEnviromentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.altimetrik.MultipleEnviromentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultipleEnviroments;
+			};
+			name = QA;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +724,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4D14035242262FA0067358D /* Debug */,
+				F4D14040242265480067358D /* QA */,
 				F4D14036242262FA0067358D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -566,6 +734,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4D14038242262FA0067358D /* Debug */,
+				F4D14041242265480067358D /* QA */,
 				F4D14039242262FA0067358D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -575,6 +744,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4D1403B242262FA0067358D /* Debug */,
+				F4D14042242265480067358D /* QA */,
 				F4D1403C242262FA0067358D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -584,6 +754,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4D1403E242262FA0067358D /* Debug */,
+				F4D14043242265480067358D /* QA */,
 				F4D1403F242262FA0067358D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
